@@ -1,1 +1,28 @@
-<p>header works!</p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Senior Project Time Clock</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a routerLink="/display">View your progress</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/track">Track your progress</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown" appDropdown>
+        <a style="cursor: pointer" class="dropdown-toggle" role="button"
+          >User <span class="caret"></span
+        ></a>
+        <ul class="dropdown-menu">
+          <li><a style="cursor: pointer">Login</a></li>
+          <hr />
+          <li><a style="cursor: pointer">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

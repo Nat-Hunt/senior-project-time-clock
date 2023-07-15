@@ -1,0 +1,19 @@
+<div class="row panel panel-default">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <span class="title pad-left-right"
+              >Click on a week to view the details</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 panel-body">
+    <app-progress-dispaly-list-item *ngFor="let item of weeks" [week]="item">
+    </app-progress-dispaly-list-item>
+  </div>
+</div>

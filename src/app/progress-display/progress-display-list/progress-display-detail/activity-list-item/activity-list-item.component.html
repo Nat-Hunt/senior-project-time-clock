@@ -1,0 +1,11 @@
+<h4 class="list-group-item-heading">{{ activity.name }}</h4>
+<h5>Resource Used: {{ activity.resource }}</h5>
+<h6>
+  {{ activity.day }} | Time Spent:
+  <span *ngIf="activity.numHours > 0">{{ activity.numHours }} hours</span>
+  <span *ngIf="activity.numMinutes > 0">
+    and {{ activity.numMinutes }} minutes</span
+  >
+</h6>
+<p>{{ activity.description }}</p>
+<br />

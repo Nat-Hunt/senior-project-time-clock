@@ -1,1 +1,22 @@
-<p>progress-display works!</p>
+<div class="row">
+  <h2>Your Progress at a glance</h2>
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      aria-valuenow="70"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      [style]="userProgress"
+    >
+      {{ hours }} hours
+    </div>
+  </div>
+  <div class="col-md-5">
+    <app-progress-display-list></app-progress-display-list>
+  </div>
+
+  <div class="col-md-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
