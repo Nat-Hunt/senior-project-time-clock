@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ProgressService {
-  private databaseUrl: string = '';
+  private databaseUrl: string = 'http://localhost:3000/weeks';
   weeks: Week[] = [];
   maxWeekId: number;
 
@@ -68,7 +68,7 @@ export class ProgressService {
           this.maxWeekId = this.getMaxId();
 
           this.weeks.sort((a, b)=> {
-            if (a.id > b.id) {
+            if (parseInt(a.id) > parseInt(b.id)) {
               return 1;
             } else {
               return -1;

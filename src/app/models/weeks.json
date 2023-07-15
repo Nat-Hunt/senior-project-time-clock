@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1",
+    "name": "Week 01",
+    "totalHours": 4,
+    "totalMinutes": 0,
+    "activities": []
+  },
+  {
+    "id": "2",
+    "name": "Week 03",
+    "totalHours": 3,
+    "totalMinutes": 0,
+    "activities": []
+  },
+  {
+    "id": "3",
+    "name": "Week 03",
+    "totalHours": 2,
+    "totalMinutes": 0,
+    "activities": []
+  },
+  {
+    "id": "4",
+    "name": "Week 04",
+    "totalHours": 15,
+    "totalMinutes": 24,
+    "activities": []
+  },
+  {
+    "id": "5",
+    "name": "Week 05",
+    "totalHours": 17,
+    "totalMinutes": 12,
+    "activities": []
+  },
+  {
+    "id": "6",
+    "name": "Week 06",
+    "totalHours": 10,
+    "totalMinutes": 24,
+    "activities": []
+  },
+  {
+    "id": "7",
+    "name": "Week 07",
+    "totalHours": 8,
+    "totalMinutes": 37,
+    "activities": [
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ee5"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ee6"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ee8"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ee9"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eea"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eeb"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eec"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eed"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eee"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eef"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Week 08",
+    "totalHours": 11,
+    "totalMinutes": 39,
+    "activities": [
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49eff"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49eff"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f00"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f00"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f01"
+        }
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Week 09",
+    "totalHours": 11,
+    "totalMinutes": 3,
+    "activities": [
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eee"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eee"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49eef"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef0"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef1"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef2"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef3"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef4"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef5"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef6"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef6"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef7"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef8"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49ef9"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c5bc2b9741d26ff49efa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Week 10",
+    "totalHours": 10,
+    "totalMinutes": 23,
+    "activities": [
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f00"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f01"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f02"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f03"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64b2c77d2b9741d26ff49f04"
+        }
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Week 11",
+    "totalHours": 21,
+    "totalMinutes": 25,
+    "activities": []
+  },
+  {
+    "id": "12",
+    "name": "Week 12",
+    "totalHours": 21,
+    "totalMinutes": 25,
+    "activities": []
+  },
+  {
+    "id": "13",
+    "name": "Week 13",
+    "totalHours": 12,
+    "totalMinutes": 13,
+    "activities": []
+  }
+]

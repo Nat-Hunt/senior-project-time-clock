@@ -7,9 +7,9 @@ export class Week {
     public name: string;
     public totalHours: number;
     public totalMinutes: number;
-    public activities: Activity[]|any;
+    public activities: Activity[]|any[];
     
-    constructor(id: string, name: string, totalHours: number, totalMinutes: number, activities: Activity[]|any) {
+    constructor(id: string, name: string, totalHours: number, totalMinutes: number, activities: Activity[]|any[]) {
         this.id = id;
         this.name = name;
         this.totalHours = totalHours;
