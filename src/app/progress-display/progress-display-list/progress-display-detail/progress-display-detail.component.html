@@ -1,6 +1,25 @@
 <div class="row panel panel-default">
   <div class="col-xs-12 panel-heading">
     <h2>{{ week.name }}</h2>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group" appDropdown>
+        <button type="button" class="btn btn-primary dropdown-toggle">
+          Manage Week <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a style="cursor: pointer" (click)="onEditWeek()">Edit Week</a>
+          </li>
+          <li>
+            <a style="cursor: pointer" (click)="onDeleteWeek()">Delete Week</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 panel-body">
     <h3>
       Total Time:
       <span *ngIf="week.totalHours"

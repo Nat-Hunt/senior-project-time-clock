@@ -5,7 +5,14 @@ const weekSchema = mongoose.Schema({
   name: { type: String, required: true },
   totalHours: { type: Number, required: true },
   totalMinutes: { type: Number, required: true },
-  activities: [{ type: mongoose.Schema.Types.ObjectId, ref: "Activity" }],
+  activities: [
+    {
+      name: { type: String, required: true },
+      description: { type: String, required: true },
+      numHours: { type: Number, required: true },
+      numMinutes: { type: Number, required: true },
+    },
+  ],
 });
 
 module.exports = mongoose.model("Week", weekSchema);

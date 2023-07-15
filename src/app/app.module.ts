@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProgressDisplayComponent } from './progress-display/progress-display.component';
-import { TrackingInputComponent } from './tracking-input/tracking-input.component';
 import { DropdownDirective } from './directives/dropdown.directive';
 import { ProgressDisplayDetailComponent } from './progress-display/progress-display-list/progress-display-detail/progress-display-detail.component';
 import { ProgressDisplayListComponent } from './progress-display/progress-display-list/progress-display-list.component';
@@ -15,18 +14,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActivityListItemComponent } from './progress-display/progress-display-list/progress-display-detail/activity-list-item/activity-list-item.component';
+import { ProgressDisplayEditComponent } from './progress-display/progress-display-edit/progress-display-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProgressDisplayComponent,
-    TrackingInputComponent,
     DropdownDirective,
     ProgressDisplayDetailComponent,
     ProgressDisplayListComponent,
     ProgressDispalyListItemComponent,
-    ActivityListItemComponent
+    ActivityListItemComponent,
+    ProgressDisplayEditComponent
   ],
   imports: [
     BrowserModule,

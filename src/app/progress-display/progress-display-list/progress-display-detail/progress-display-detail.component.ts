@@ -30,4 +30,13 @@ export class ProgressDisplayDetailComponent implements OnInit {
       }
     )
   }
+
+  onEditWeek(){
+    this.router.navigate(['edit'], {relativeTo: this.route})
+  }
+
+  onDeleteWeek(){
+    this.progressService.deleteWeek(this.week);
+    this.router.navigate(['/recipes'], {relativeTo: this.route})
+  }
 }

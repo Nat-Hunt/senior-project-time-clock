@@ -8,7 +8,6 @@ const mongoose = require("mongoose");
 const index = require("./server/routes/app");
 
 const weeksRoutes = require("./server/routes/weeks");
-const activitiesRoutes = require("./server/routes/activities");
 
 const app = express();
 
@@ -37,7 +36,6 @@ app.use(express.static(path.join(__dirname, "dist/senior-project-time-clock")));
 app.use("/", index);
 
 app.use("/weeks", weeksRoutes);
-app.use("/activities", activitiesRoutes);
 
 app.get("*", (req, res) => {
   res.sendFile(

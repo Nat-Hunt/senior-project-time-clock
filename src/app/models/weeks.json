@@ -48,54 +48,64 @@
     "totalMinutes": 37,
     "activities": [
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ee5"
-        }
+        "name": "Dion Training",
+        "description": "Section 11, quiz score 3/3",
+        "numHours": 1,
+        "numMinutes": 11
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ee6"
-        }
+        "name": "Dion Training",
+        "description": "Section 12, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 36
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ee8"
-        }
+        "name": "Dion Training",
+        "description": "Section 13, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 26
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ee9"
-        }
+        "name": "Dion Training",
+        "description": "Section 14, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 55
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eea"
-        }
+        "name": "Dion Training",
+        "description": "Section 15, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 29
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eeb"
-        }
+        "name": "Dion Training",
+        "description": "Section 16, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 49
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eec"
-        }
+        "name": "Dion Training",
+        "description": "Section 17, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 57
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eed"
-        }
+        "name": "Dion Training",
+        "description": "Section 18, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 14
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eee"
-        }
+        "name": "Dion Training",
+        "description": "Section 19",
+        "numHours": 0,
+        "numMinutes": 47
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eef"
-        }
+        "name": "Dion Training",
+        "description": "Section 20",
+        "numHours": 0,
+        "numMinutes": 37
       }
     ]
   },
@@ -106,29 +116,34 @@
     "totalMinutes": 39,
     "activities": [
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49eff"
-        }
+        "name": "Total Seminars",
+        "description": "Chapter 1, quiz score 6/8",
+        "numHours": 2,
+        "numMinutes": 18
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49eff"
-        }
+        "name": "Total Seminars",
+        "description": "Chapter 1, quiz score 8/8",
+        "numHours": 2,
+        "numMinutes": 20
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f00"
-        }
+        "name": "Total Seminars",
+        "description": "Chapter 2, quiz score 2/8",
+        "numHours": 2,
+        "numMinutes": 40
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f00"
-        }
+        "name": "Total Seminars",
+        "description": "Chapter 2, quiz score 8/8",
+        "numHours": 2,
+        "numMinutes": 45
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f01"
-        }
+        "name": "Total Seminars",
+        "description": "Chapter 3, quiz score 4/8",
+        "numHours": 1,
+        "numMinutes": 36
       }
     ]
   },
@@ -139,79 +154,94 @@
     "totalMinutes": 3,
     "activities": [
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eee"
-        }
+        "name": "Dion Training",
+        "description": "Section 19, quiz score 1/3",
+        "numHours": 0,
+        "numMinutes": 36
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eee"
-        }
+        "name": "Dion Training",
+        "description": "Section 19, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 36
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49eef"
-        }
+        "name": "Dion Training",
+        "description": "Section 20, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 37
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef0"
-        }
+        "name": "Dion Training",
+        "description": "Section 22, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 53
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef1"
-        }
+        "name": "Dion Training",
+        "description": "Section 23, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 52
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef2"
-        }
+        "name": "Dion Training",
+        "description": "Section 24, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 48
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef3"
-        }
+        "name": "Dion Training",
+        "description": "Section 25, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 16
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef4"
-        }
+        "name": "Dion Training",
+        "description": "Section 26, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 21
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef5"
-        }
+        "name": "Dion Training",
+        "description": "Section 27, quiz score 1/3",
+        "numHours": 0,
+        "numMinutes": 18
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef6"
-        }
+        "name": "Dion Training",
+        "description": "Section 27, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 18
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef6"
-        }
+        "name": "Dion Training",
+        "description": "Section 28, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 51
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef7"
-        }
+        "name": "Dion Training",
+        "description": "Section 29, quiz score 3/3",
+        "numHours": 0,
+        "numMinutes": 40
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef8"
-        }
+        "name": "Dion Training",
+        "description": "Section 30, quiz score 3/3",
+        "numHours": 1,
+        "numMinutes": 15
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49ef9"
-        }
+        "name": "Dion Training",
+        "description": "Section 31, quiz score 0/3",
+        "numHours": 1,
+        "numMinutes": 25
       },
       {
-        "_id": {
-          "$oid": "64b2c5bc2b9741d26ff49efa"
-        }
+        "name": "Dion Training",
+        "description": "Section 31, quiz score 3/3",
+        "numHours": 1,
+        "numMinutes": 25
       }
     ]
   },
@@ -222,51 +252,35 @@
     "totalMinutes": 23,
     "activities": [
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f00"
-        }
+        "name": "Total Seminars",
+        "description": "Section 3 (Chapter 2)",
+        "numHours": 2,
+        "numMinutes": 35
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f01"
-        }
+        "name": "Total Seminars",
+        "description": "Section 4 (Chapter 3)",
+        "numHours": 1,
+        "numMinutes": 21
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f02"
-        }
+        "name": "Total Seminars",
+        "description": "Section 5 (Chapter 4)",
+        "numHours": 2,
+        "numMinutes": 48
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f03"
-        }
+        "name": "Total Seminars",
+        "description": "Section 6 (Chapter 5)",
+        "numHours": 1,
+        "numMinutes": 39
       },
       {
-        "_id": {
-          "$oid": "64b2c77d2b9741d26ff49f04"
-        }
+        "name": "Total Seminars",
+        "description": "Section 7 (Chapter 6)",
+        "numHours": 2,
+        "numMinutes": 0
       }
     ]
-  },
-  {
-    "id": "11",
-    "name": "Week 11",
-    "totalHours": 21,
-    "totalMinutes": 25,
-    "activities": []
-  },
-  {
-    "id": "12",
-    "name": "Week 12",
-    "totalHours": 21,
-    "totalMinutes": 25,
-    "activities": []
-  },
-  {
-    "id": "13",
-    "name": "Week 13",
-    "totalHours": 12,
-    "totalMinutes": 13,
-    "activities": []
   }
 ]
