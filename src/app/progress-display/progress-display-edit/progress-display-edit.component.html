@@ -1,1 +1,117 @@
-<p>progress-display-edit works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="weekForm" (ngSubmit)="onSubmit(weekForm)">
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">
+            Cancel
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              formControlName="name"
+              type="text"
+              id="name"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="totalHours">Total Hours</label>
+            <input
+              formControlName="totalHours"
+              type="number"
+              id="totalHours"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="totalMinutes">Total Minutes</label>
+            <input
+              formControlName="totalMinutes"
+              type="number"
+              id="totalMinutes"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" formArrayName="activities">
+          <div
+            class="row"
+            *ngFor="let activityCtrl of activities.controls; let i = index"
+            [formGroupName]="i"
+          >
+            <div class="col-xs-12">
+              <label>New Activity</label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-xs-12">
+              <textarea
+                type="text"
+                class="form-control"
+                formControlName="description"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="col-xs-5">
+              <label>Hours</label>
+              <input
+                type="number"
+                class="form-control"
+                formControlName="numHours"
+              />
+            </div>
+            <div class="col-xs-5">
+              <label>Minutes</label>
+              <input
+                type="number"
+                class="form-control"
+                formControlName="numMinutes"
+              />
+            </div>
+            <div class="col-xs-2">
+              <button
+                type="button"
+                class="btn btn-danger"
+                (click)="deleteActivity(i)"
+              >
+                X
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12">
+            <button
+              type="button"
+              class="btn btn-success"
+              (click)="addActivity()"
+            >
+              Add an Activity
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

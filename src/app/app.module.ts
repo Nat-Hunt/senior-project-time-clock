@@ -10,7 +10,7 @@ import { ProgressDisplayDetailComponent } from './progress-display/progress-disp
 import { ProgressDisplayListComponent } from './progress-display/progress-display-list/progress-display-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProgressDispalyListItemComponent } from './progress-display/progress-display-list/progress-dispaly-list-item/progress-dispaly-list-item.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActivityListItemComponent } from './progress-display/progress-display-list/progress-display-detail/activity-list-item/activity-list-item.component';
@@ -32,6 +32,7 @@ import { ProgressDisplayEditComponent } from './progress-display/progress-displa
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     NgbModule
