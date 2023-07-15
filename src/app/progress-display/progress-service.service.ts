@@ -22,8 +22,8 @@ export class ProgressService {
   getMaxId(): number {
     let maxId = 0;
 
-    for (let contact of this.weeks) {
-      let currentId = +contact.id;
+    for (let week of this.weeks) {
+      let currentId = +week.id;
       if (currentId > maxId) {
         maxId = currentId;
       }

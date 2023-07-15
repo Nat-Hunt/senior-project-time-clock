@@ -36,6 +36,9 @@ export class ProgressDisplayEditComponent implements OnInit {
 
         if (!this.id || this.id === null) {
           this.editMode = false;
+          let newId = this.progressService.getMaxId() + 1;
+          name = `Week ${newId}`;
+          this.week = new Week(`${newId}`, name, hours, minutes, [])
           return;
         }
         this.originalWeek = this.progressService.getWeek(this.id);
@@ -57,7 +60,8 @@ export class ProgressDisplayEditComponent implements OnInit {
       totalMinutes: [minutes, Validators.required],
       activities: this.fb.array([]),
     })
-    if (this.week['activities']) {
+    console.log(this.week);
+    if (this.week.activities) {
       for (let activity of this.week.activities) {
         const activityForm = this.fb.group({
           name: [activity.name, Validators.required],

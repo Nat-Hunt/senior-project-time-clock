@@ -12,6 +12,11 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success" (click)="addNewWeek()">New Week</button>
+    </div>
+  </div>
   <div class="col-xs-12 panel-body">
     <app-progress-dispaly-list-item *ngFor="let item of weeks" [week]="item">
     </app-progress-dispaly-list-item>
