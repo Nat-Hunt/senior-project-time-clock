@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.get("/", (req, res, next) => {
   Week.find()
-    .populate("activities")
     .then((data) => {
+      console.log(data);
       res.status(200).json(data);
     })
     .catch((error) => {

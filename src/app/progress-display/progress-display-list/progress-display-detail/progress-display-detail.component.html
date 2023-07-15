@@ -1,8 +1,13 @@
 <div class="row panel panel-default">
   <div class="col-xs-12 panel-heading">
-    <h2>Week Name</h2>
+    <h2>{{ week.name }}</h2>
     <h3>
-      Total Time: <span>num hours <span> and num minutes</span></span>
+      Total Time:
+      <span *ngIf="week.totalHours"
+        >{{ week.totalHours }} hours<span *ngIf="week.totalMinutes">
+          and {{ week.totalMinutes }}</span
+        ></span
+      >
     </h3>
     <app-activity-list-item
       *ngFor="let item of activities"

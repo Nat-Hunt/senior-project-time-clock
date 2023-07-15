@@ -80,13 +80,13 @@ export class ProgressService {
       )
   }
 
-  getWeek(id: string): Week | null {
+  getWeek(id: string): Week {
     for (let week of this.weeks) {
       if (week.id === id) {
         return week
       }
     }
-    return null
+    return null!;
   }
 
   updateWeek(originalWeek: Week, newWeek: Week) {
