@@ -59,9 +59,9 @@ const port = process.env.PORT || "3000";
 app.set("port", port);
 
 // Create HTTP server.
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
 // Tell the server to start listening on the provided port
-server.listen(port, function () {
+app.listen(port, function () {
   console.log("API running on localhost: " + port);
 });

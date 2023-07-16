@@ -17,6 +17,7 @@ export class ProgressDisplayEditComponent implements OnInit {
   id: string;
   editMode = false;
   weekForm: FormGroup;
+  newId = 0;
 
   constructor(
     private fb: FormBuilder,
@@ -36,9 +37,9 @@ export class ProgressDisplayEditComponent implements OnInit {
 
         if (!this.id || this.id === null) {
           this.editMode = false;
-          let newId = this.progressService.getMaxId() + 1;
-          name = `Week ${newId}`;
-          this.week = new Week(`${newId}`, name, hours, minutes, [])
+          this.newId = this.progressService.getMaxId() + 1;
+          name = `Week ${this.newId}`;
+          this.week = new Week(`${this.newId}`, name, hours, minutes, [])
           return;
         }
         this.originalWeek = this.progressService.getWeek(this.id);
@@ -60,7 +61,7 @@ export class ProgressDisplayEditComponent implements OnInit {
       totalMinutes: [minutes, Validators.required],
       activities: this.fb.array([]),
     })
-    console.log(this.week);
+    
     if (this.week.activities) {
       for (let activity of this.week.activities) {
         const activityForm = this.fb.group({
@@ -96,14 +97,22 @@ export class ProgressDisplayEditComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup) {
+    const value = form.value;
+    const newWeek = new Week(
+      `${this.newId}`,
+      value.name,
+      value.totalHours,
+      value.totalMinutes,
+      value.activities
+    )
+
     if (this.editMode) {
-      this.progressService.updateWeek(this.progressService.getWeek(this.id), this.weekForm.value);
+      this.progressService.updateWeek(this.originalWeek, newWeek);
     } else {
-      this.progressService.addWeek(this.weekForm.value);
+      this.progressService.addWeek(newWeek);
     }
 
-    this.weekForm.reset();
-    this.onCancel();
+    this.router.navigate(['/display'], {relativeTo: this.route})
   }
 
   onCancel() {

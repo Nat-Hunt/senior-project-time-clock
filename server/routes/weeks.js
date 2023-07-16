@@ -6,10 +6,10 @@ const router = express.Router();
 router.get("/", (req, res, next) => {
   Week.find()
     .then((data) => {
-      console.log(data);
       res.status(200).json(data);
     })
     .catch((error) => {
+      console.log(error);
       res.status(500).json({
         message: "An error occured",
         error: error,
@@ -18,23 +18,24 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/", (req, res, next) => {
-  const maxWeekId = req.body.id + 1;
-  const Week = new Week({
-    id: maxWeekId,
+  const week = new Week({
+    id: req.body.id,
     name: req.body.name,
-    totalHours: req.body.numHours,
-    totalMinutes: req.body.numMinutes,
+    totalHours: req.body.totalHours,
+    totalMinutes: req.body.totalMinutes,
     activities: req.body.activities,
   });
 
-  Week.save()
+  week
+    .save()
     .then((createdWeek) => {
       res.status(201).json({
         message: "Week added successfully",
-        Week: createdWeek,
+        week: createdWeek,
       });
     })
     .catch((error) => {
+      console.log(error);
       res.status(500).json({
         message: "An error occured",
         error: error,
@@ -46,11 +47,11 @@ router.put("/:id", (req, res, next) => {
   Week.findOne({ id: req.params.id })
     .then((week) => {
       week.name = req.body.name;
-      week.totalHours = req.body.numHours;
-      week.totalMinutes = req.body.numMinutes;
+      week.totalHours = req.body.totalHours;
+      week.totalMinutes = req.body.totalHours;
       week.activities = req.body.activities;
 
-      Week.updateOne({ id: req.params.id }, contact)
+      Week.updateOne({ id: req.params.id }, week)
         .then((result) => {
           res.status(204).json({ message: "Week updated successfully" });
         })
@@ -62,6 +63,7 @@ router.put("/:id", (req, res, next) => {
         });
     })
     .catch((error) => {
+      console.log(error);
       res.status(500).json({
         message: "Week not found",
         error: { week: error },
@@ -86,6 +88,7 @@ router.delete("/:id", (req, res, next) => {
         });
     })
     .catch((error) => {
+      console.log(error);
       res.status(500).json({
         message: "An error occurred",
         error: { week: error },

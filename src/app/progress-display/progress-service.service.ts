@@ -36,11 +36,15 @@ export class ProgressService {
     const weeks = JSON.stringify(this.weeks);
     const httpHeaders = new HttpHeaders;
     httpHeaders.set('Content-type', 'application/json');
-    this.http
-      .put(this.databaseUrl, weeks, {headers: httpHeaders})
-      .subscribe(()=>{
-        this.weekListChangedEvent.next(this.weeks.slice());
-      })
+
+    for (let w of this.weeks) {
+      const week = JSON.stringify(w);
+      this.http
+        .put(`${this.databaseUrl}/${w.id}`, week, {headers: httpHeaders})
+        .subscribe(()=>{
+          this.weekListChangedEvent.next(this.weeks.slice());
+        })
+    }
   }
 
   addWeek(newWeek: Week) {
@@ -48,11 +52,10 @@ export class ProgressService {
       return
     }
 
-    newWeek.id = "";
     const headers = new HttpHeaders({'Content-type': 'application/json'});
 
     this.http
-      .post<{message: String, week: Week}>(this.databaseUrl, newWeek, {headers: headers})
+      .post<{message: string, week: Week}>(this.databaseUrl, newWeek, {headers: headers})
       .subscribe((responseData)=> {
         this.weeks.push(responseData.week);
         this.storeWeeks();
@@ -114,7 +117,7 @@ export class ProgressService {
       return;
     }
 
-    const position = this.weeks.findIndex(week=> week.id === week.id);
+    const position = this.weeks.findIndex(w=> w.id === week.id);
     if (position < 0) {
       return;
     }
