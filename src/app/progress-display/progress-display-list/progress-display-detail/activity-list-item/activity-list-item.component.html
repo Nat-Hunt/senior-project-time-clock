@@ -2,8 +2,11 @@
 <h6>
   Time Spent:
   <span *ngIf="activity.numHours > 0">{{ activity.numHours }} hours</span>
-  <span *ngIf="activity.numMinutes > 0">
+  <span *ngIf="activity.numMinutes > 0 && activity.numHours > 0">
     and {{ activity.numMinutes }} minutes</span
+  >
+  <span *ngIf="activity.numMinutes > 0 && activity.numHours < 1">
+    {{ activity.numMinutes }} minutes</span
   >
 </h6>
 <p>{{ activity.description }}</p>
